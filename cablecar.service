@@ -1,0 +1,14 @@
+[Unit]
+Description=cable car control
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/opt/piCableCar/scripts/server.sh
+ExecStopPost=/opt/piCableCar/scripts/stop.sh
+
+[Install]
+WantedBy=multi-user.target

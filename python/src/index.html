@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cable Car Control</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/cablecar.svg" type="image/svg+xml" />
+    <link rel="mask-icon" href="img/cablecar.svg" color="white" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-iphone-60x60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/apple-touch-icon-ipad-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/apple-touch-icon-iphone-retina-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/apple-touch-icon-ipad-retina-152x152.png"
+    />
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      /* center h1 */
+      h1 {
+        text-align: center;
+      }
+
+      /* center img */
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* center button */
+      ul {
+        list-style-type: none;
+        /* margin: 0; */
+        margin-top: 5in 0px;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      button {
+        background-color: grey;
+        /* background: none; */
+        color: white;
+        text-transform: uppercase;
+        font-size: x-large;
+        border: none;
+        padding: 0;
+        /* font: inherit; */
+        cursor: pointer;
+        outline: inherit;
+        width: 80%;
+        height: 60px;
+        margin: 5px;
+      }
+      button.up {
+        background-color: turquoise;
+      }
+      button.down {
+        background-color: turquoise;
+      }
+      button.stop {
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cable Car Control</h1>
+    <img src="img/cablecar.svg" alt="cable car" height="150" />
+    <ul>
+      <li>
+        <button onclick="window.location.href='up'" class="up">⬆️ up ⬆️</button>
+      </li>
+      <li>
+        <button onclick="window.location.href='down'" class="down">
+          ⬇️ down ⬇️
+        </button>
+      </li>
+      <li>
+        <button onclick="window.location.href='stop'" class="stop">
+          🛑 stop 🛑
+        </button>
+      </li>
+    </ul>
+  </body>
+</html>
